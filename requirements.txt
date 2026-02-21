@@ -1,0 +1,15 @@
+# Core Agent Framework
+langgraph>=0.0.26
+langchain>=0.1.13
+
+# LLM Integrations
+langchain-ollama>=0.1.0
+ollama>=0.1.7
+llama-index-core>=0.10.15
+
+# Database & Infrastructure
+pymongo>=4.6.2
+paramiko>=3.4.0
+
+# Optional / Future Integrations
+# deepeval>=0.21.0
