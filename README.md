@@ -1,11 +1,11 @@
-# 🛠️ FieldOps 2.0: Autonomous Multi-Agent IT Remediation
+# 🛠️ RevOps 2.0: Autonomous Multi-Agent IT Remediation
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![LangGraph](https://img.shields.io/badge/LangGraph-Stateful_Agents-orange)](https://python.langchain.com/docs/langgraph)
 [![Ollama](https://img.shields.io/badge/Ollama-Local_LLMs-black)](https://ollama.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-**FieldOps** is an autonomous, multi-agent AI framework designed to automate IT operations, root cause analysis (RCA), and incident remediation. Built on **LangGraph**, it coordinates specialized sub-agents to independently query databases, fetch server logs via SSH, diagnose errors, and generate actionable technical solutions.
+**RevOps** is an autonomous, multi-agent AI framework designed to automate IT operations, root cause analysis (RCA), and incident remediation. Built on **LangGraph**, it coordinates specialized sub-agents to independently query databases, fetch server logs via SSH, diagnose errors, and generate actionable technical solutions.
 
 ---
 
