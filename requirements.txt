@@ -6,10 +6,15 @@ langchain>=0.1.13
 langchain-ollama>=0.1.0
 ollama>=0.1.7
 llama-index-core>=0.10.15
+llama-index-llms-ollama>=0.1.5
+llama-index-embeddings-ollama>=0.1.2
 
 # Database & Infrastructure
 pymongo>=4.6.2
 paramiko>=3.4.0
+
+# Configuration
+python-dotenv>=1.0.0
 
 # Optional / Future Integrations
 # deepeval>=0.21.0

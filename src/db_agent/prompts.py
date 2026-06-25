@@ -1,4 +1,4 @@
-# /home/genaidevassetv3/FieldOps_2.0/SubAgents/db_agent/prompts.py
+# Prompt templates for the DB agent (NL -> MongoDB query).
 
 # --- SYSTEM PROMPT (Transformer) ---
 TRANSFORM_PROMPT = """
@@ -34,13 +34,13 @@ User Question: "{clean_question}"
 2. **Format**: {{ "collection": "TargetCollectionName", "query": {{ ...MQL_FILTER... }} }}
 3. **Collection Mapping**: ONLY use a collection name that exactly matches one listed in the schema above. Do NOT use old names like 'A
 larms' or 'Customers' unless they appear in the schema.
-4. **Synonym Handling (CRITICAL)**: 
-   - Humans use imprecise language. You must map their words to the EXACT values and fields in the schema.
-   - Example: If a user asks for "active faults", look for a collection like 'faults' and a status field like 'Status' with a value of 
+4. **Synonym Handling (CRITICAL)**: 
+   - Humans use imprecise language. You must map their words to the EXACT values and fields in the schema.
+   - Example: If a user asks for "active faults", look for a collection like 'faults' and a status field like 'Status' with a value of 
 'Active'.
 5. **Value Matching (CRITICAL UPDATE)**:
-   - **ALWAYS use Regex** for descriptive fields (Names, OS, Descriptions, Types, IDs) to capture partial matches.
-   - **Example**: Instead of {{ "Server_Name": "genaidevassetv3" }}, use {{ "Server_Name": {{ "$regex": "genaidevassetv3", "$options": 
+   - **ALWAYS use Regex** for descriptive fields (Names, OS, Descriptions, Types, IDs) to capture partial matches.
+   - **Example**: Instead of {{ "Server_Name": "genaidevassetv3" }}, use {{ "Server_Name": {{ "$regex": "genaidevassetv3", "$options": 
 "i" }} }}.
 
 Example Output Format:
